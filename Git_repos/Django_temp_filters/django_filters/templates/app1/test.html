@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django-Filters</title>
+</head>
+<body>
+<h1>Welcome to Django-Filter Page</h1>
+<p>Django provides multiple filters to use in templares.</p>
+
+<b>django template filters:</b>
+<ul>
+    <li><b>add</b> filter for addition on variable : {{value | add:"2" }}
+    <li><b>capfirst</b> filter to make first letter capital : {{ backend | capfirst }}</li>
+    <li><b>center</b> filter to make it center for specified range : {{ backend | center:"15"}}</li>
+    <li><b>cut</b> filter removes arg from given string : {{ data | cut:" "}}</li>
+    <li><b>date</b> filter place date in specified format : {{ date | date:"d M Y" }}</li>
+    <li><b>first</b> filter return first ele of given list : {{ list | first}}</li>
+    <li><b>floatformat</b> filter round float upto args : {{val | floatformat:"-2" }}</li>
+    <li><b>ger_digit</b> filter specified no. digit from right :{{ val | get_digit:"2" }} </li>
+    <li><b>join</b> filter joins list with specified arg. : {{ list| join:"+"}}</li>
+    <li><b>length_is</b> filter return true if specified length is equal to variable len :{{ list | length_is:"4"}}</li>
+    <li><b>random</b> filter return random item from list : {{ list | random }}</li>
+    <li><b>slugify</b> filter removes spaces to hyphens. Removes characters that aren’t alphanumerics, underscores, or hyphens. Converts to lowercase. Also strips leading and trailing whitespace : {{ data | slugify }}</li>
+
+</ul>
+
+<p><b>For more django in-build  template filters check <a href="https://docs.djangoproject.com/en/3.1/ref/templates/builtins/#ref-templates-builtins-filters"> Django-Filters.</a></p>
+<p><b>For in-build django template tags check <a href="https://docs.djangoproject.com/en/3.1/ref/templates/builtins/#std:templatetag-comment">Django-tags.</a></b></p>
+
+</body>
+</html>
